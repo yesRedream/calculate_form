@@ -121,6 +121,7 @@ function getTotal() {
     var cakePrice = getCleantypeTime()+getBedroomsTime()+bathroomsTime();
 
     document.getElementById("cleanTime").innerHTML="~"+cakePrice+' hours';
+    document.getElementById("cleanTimeMobile").innerHTML="~"+cakePrice+' hours';
 
     var totalPrice = Math.ceil(cakePrice*34.5);
 

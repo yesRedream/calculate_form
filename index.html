@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#267df4">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Input form</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="countwrap bedroomsCount-wrap">
+      <h6 class="hidden">1</h6>
+      <h3 id="bedroomsCount"></h3>
+      <p>Bedrooms</p>
+    </div>
+    
+    <div class="countwrap bathroomsCount-wrap">
+      <h6 class="hidden">1</h6>
+      <h3 id="bathroomsCount"></h3>
+      <p>Bathrooms</p>
+    </div>
+    
+    <div class="countwrap cleantypeCount-wrap">
+      <h6 id="cleanTime"></h6>
+      <h3 id="cleantypeCount"></h3>
+      <p>Clean-type</p>
+    </div>
+
+    <div class="countwrap priceCount-wrap">
+      <h6 class="hidden">1</h6>
+      <h3 id="sumPrice"></h3>
+      <p>Subtotal</p>
+    </div>
+  </header>
+
+  <section class="input-form">
+    <h2>Book a cleaning today</h2>
+    
+    <div id="sumOfAll"></div>
+
+    <h5>Numbers of bedrooms</h5>
+    
+    <form class="bedrooms" name="bedroom" id="bedroomForm">
+      <input  id="bedrooms-1" name="bedrooms" value="Studio" type="radio" checked />
+      <label for="bedrooms-1">Studio</label>
+      <input  id="bedrooms-2" name="bedrooms" value=1 type="radio" />
+      <label for="bedrooms-2">1</label>
+      <input  id="bedrooms-3" name="bedrooms" value=2 type="radio" />
+      <label for="bedrooms-3">2</label>
+      <input  id="bedrooms-4" name="bedrooms" value=3 type="radio" />
+      <label for="bedrooms-4">3</label>
+      <input  id="bedrooms-5" name="bedrooms" value=4 type="radio" /> 
+      <label for="bedrooms-5">4</label>
+      <input  id="bedrooms-6" name="bedrooms" value=5 type="radio" /> 
+      <label for="bedrooms-6">5</label>
+      
+    </form>
+    
+    <h5>Numbers of bathrooms</h5>
+    
+    <form class="bathrooms" name="bathroom" id="bathroomForm">
+      <input  id="bathrooms-1" name="bathrooms" value=1 type="radio" checked />
+      <label for="bathrooms-1">1</label>
+      <input  id="bathrooms-2" name="bathrooms" value=2 type="radio" />
+      <label for="bathrooms-2">2</label>
+      <input  id="bathrooms-3" name="bathrooms" value=3 type="radio" />
+      <label for="bathrooms-3">3</label>
+      <input  id="bathrooms-4" name="bathrooms" value=4 type="radio" />
+      <label for="bathrooms-4">4</label>
+      <input  id="bathrooms-5" name="bathrooms" value=5 type="radio" />
+      <label for="bathrooms-5">5</label>
+      <input  id="bathrooms-6" name="bathrooms" value=6 type="radio" disabled/>
+      <label for="bathrooms-6"></label>
+    </form>
+
+    <h5>Clean type</h5>
+  
+
+    <form class="clean-type" name="cleantype" id="cleantypeForm">
+      <input  id="clean-type-1" name="cleantypes" value="Standart" type="radio" checked />
+      <label for="clean-type-1">Standart</label>
+      <input  id="clean-type-2" name="cleantypes" value="Standard Plus" type="radio" />
+      <label for="clean-type-2">Standard Plus</label>
+      <input  id="clean-type-3" name="cleantypes" value="Deep Clean" type="radio" />
+      <label for="clean-type-3">Deep Clean</label>
+      <input  id="clean-type-4" name="cleantypes" value="Moving In/Out" type="radio" />
+      <label for="clean-type-4">Moving In/Out</label>
+    </form>
+  </section>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

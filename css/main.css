@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #16374b;
+}
+
+h3 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 11px;
+	font-weight: bold;
+	color: #16374b;
+}
+
+h6 {
+	font-size: 12px;
+	font-style: italic;
+	font-weight: 400;
+}
+
+header {
+	display: flex;
+	justify-content : center;
+}
+
+header .countwrap {
+	display: flex;
+  	justify-content : space-around;
+  	align-items: center;
+  	flex-direction: column;
+  	height: 70px;
+	border: 1px solid #efeaea;
+	border-top: none;
+	padding: 10px;
+	margin-left: -1px;
+}
+
+header .bedroomsCount-wrap {
+	min-width: 90px;
+}
+
+header .priceCount-wrap {
+	min-width: 80px;
+}
+
+header .cleantypeCount-wrap {
+	min-width: 170px;
+}
+
+header .countwrap p {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #9fa4a6;
+}
+
+header .countwrap p,
+header .countwrap h3,
+header .countwrap h6 {
+	margin: 0;
+}
+
+header .countwrap .hidden {
+	visibility: hidden;
+}
+
+.input-form {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+	max-width: 800px;
+}
+
+.input-form h5 {
+	text-align: left;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.input-form input {
+	display: none;
+}
+
+.input-form .bedrooms,
+.input-form .bathrooms,
+.input-form .clean-type {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.input-form .clean-type {
+	justify-content: space-between;
+}
+
+.input-form .bedrooms label,
+.input-form .bathrooms label,
+.input-form .clean-type label {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	height: 70px;
+	border: 1px solid #d0d0d0;
+
+}
+
+.input-form .bedrooms label,
+.input-form .bathrooms label {
+	margin-left: -1px;	
+	width: 16.6%;
+}
+
+.input-form .clean-type label {
+	width: 23%;
+}
+
+.input-form .bedrooms label:hover,
+.input-form .bathrooms label:hover,
+.input-form .clean-type label:hover {
+	color: #5146ad;
+	border-color: #5146ad;
+	position: relative;
+}
+
+.input-form .bedrooms input[type=radio]:checked + label,
+.input-form .bathrooms input[type=radio]:checked + label,
+.input-form .clean-type input[type=radio]:checked + label {
+	position: relative;
+	background-color: #5146ad;
+	color: #fff;
+	border-color: #5146ad;
+}
+
+.input-form .bedrooms input[type=radio]:disabled + label,
+.input-form .bathrooms input[type=radio]:disabled + label,
+.input-form .clean-type input[type=radio]:disabled + label {
+	visibility: hidden;
+}
+
+.input-form .bedrooms input[type=radio]:checked + label:hover,
+.input-form .bathrooms input[type=radio]:checked + label:hover,
+.input-form .clean-type input[type=radio]:checked + label:hover {
+	background-color: #5146ad;
+	color: #fff;
+	border-color: #5146ad;
+}
+
